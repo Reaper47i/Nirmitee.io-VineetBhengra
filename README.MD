@@ -1,4 +1,4 @@
-# __A Dentist Calender Web App__ :health_worker: :woman_health_worker:
+# __A Dentist Calendar Web App__ :health_worker: :woman_health_worker:
 
 ## __Features present__:-
  - **Drag and Drop Functionality**
@@ -17,7 +17,7 @@
 
 ## __Technologies used__ :-
  - __React.Js__ and __REDUX__ used
- - SCSS
+ - ~~SCSS~~
  - Vite
  - Chrome-Devtools
  - Figma
