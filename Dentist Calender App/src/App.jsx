@@ -1,13 +1,11 @@
-
-import './App.css'
+import MainContent from './components/mainContent/MainContent'
+import Sidebar from './components/sidebar/Sidebar'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        Hello World
-        
-      </header>
+    <div className="contaner mx-auto flex w-full h-screen font-popins">
+      <Sidebar/>
+      <MainContent/>
     </div>
   )
 }
