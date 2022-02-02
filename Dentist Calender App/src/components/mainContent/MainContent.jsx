@@ -1,5 +1,6 @@
-import { SearchIcon,CalendarIcon } from '@heroicons/react/outline';
+import { SearchIcon,CalendarIcon, ChevronLeftIcon, ChevronRightIcon, ClockIcon } from '@heroicons/react/outline';
 import { BellIcon, PlusCircleIcon, } from '@heroicons/react/solid'
+import { Scheduler } from '../grid/Scheduler';
 
 function MainContent(){
     return(
@@ -18,29 +19,47 @@ function MainContent(){
                             <input type="text" placeholder='search' className='bg-transparent outline-none'/>
                         </div>
                     </div>
-                    <button><PlusCircleIcon className='w-10 h-10 fill-blue-700'/></button>
-                    <button className="relative bg-slate-300 rounded-full p-1.5">
-                        <BellIcon className='w-6 h-6 fill-gray-500'/>
-                        <span className='absolute -top-2 -right-2 py-1 px-2 rounded-full bg-red-500 text-xs ml-1 '>8</span>
+                    <button><PlusCircleIcon className='w-10 h-10 fill-blue-700 hover:fill-blue-600'/></button>
+                    <button className="relative bg-slate-300 rounded-full p-1.5 hover:bg-slate-400">
+                        <BellIcon className='w-6 h-6 fill-gray-600'/>
+                        <span className='absolute -top-2 -right-3 py-1 px-2 rounded-full bg-red-500 text-xs'>8</span>
                     </button>
                 </div>
             </div>
             <span className="w-full bg-zinc-300 h-0.5"></span>
-
-            <div className="w-full h-12">
-                
+        
+            <div className="w-full h-10 flex flex-row justify-between py-2 px-3">
+                <div className="w-full flex flex-row gap-1.5">
+                    <div className='flex items-center justify-center bg-slate-300 py-0.5 px-2 rounded-sm'><ChevronLeftIcon className='w-4 h-4'/></div>
+                    <div className='bg-slate-300 py-0.5 px-2 text-center text-sm rounded-sm w-max'>date</div>
+                    <div className='flex items-center justify-center bg-slate-300 py-0.5 px-2 rounded-sm'><ChevronRightIcon className='w-4 h-4'/></div>
+                </div>
+                <div className='w-full flex flex-row justify-end items-center mr-2 pr-2 gap-1.5 text-sm rounded-sm'>
+                    <div className='inline-block mr-2 bg-slate-300 py-0.5 px-2 rounded-sm w-max'>Request Approved</div>
+                    <div className='inline-block bg-slate-300 py-0.5 px-2 rounded-sm w-max'>reload</div>
+                    <div className='inline-block bg-slate-300 py-0.5 px-2 rounded-sm w-max'>print</div>
+                    <div className='inline-block bg-slate-300 py-0.5 px-2 rounded-sm w-max'>filter</div>
+                    <div className='inline-block bg-slate-300 py-0.5 px-2 rounded-sm w-max'>schedule</div>
+                </div>
             </div>
             
             <span className="w-full bg-zinc-300 h-0.5"></span>
             
-            <div className="w-full h-10">
-                date time
+            <div className="w-full h-10 flex flex-row items-center justify-around px-2 py-0.5 ">
+                <div><ClockIcon className='w-5 h-5 p-0.5 text-slate-500'/></div>
+                <div className='text-slate-500'>Mon</div>
+                <div className='text-slate-500'>Tue</div>
+                <div className='text-slate-500'>Wed</div>
+                <div className='text-slate-500'>Thu</div>
+                <div className='text-slate-500'>Fri</div>
+                <div className='text-slate-500'>Sat</div>
+                <div className='text-slate-500'>Sun</div>
             </div>
             
             <span className="w-full bg-zinc-300 h-0.5"></span>
             
             <div className="w-full h-full">
-                grid
+                <Scheduler/>
             </div>
         </div>
     )

@@ -3,3 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components{
+    .timeLayout{
+        @apply grid grid-cols-8 grid-rows-layout;
+    }
+}
+
