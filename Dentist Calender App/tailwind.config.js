@@ -8,9 +8,10 @@ module.exports = {
       fontFamily:{
         popins: ['Poppins', 'sans-serif'],
       },
-      gridTemplateRows:{
-        layout:'60px repeat(7, minmax(65px,1fr)) 60px'
+      gridTemplateColumns:{
+        layout:'75px repeat(7,minmax(0,1fr))'
       }
+      
     },
   },
   plugins: [],

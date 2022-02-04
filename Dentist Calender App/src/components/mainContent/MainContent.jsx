@@ -45,19 +45,6 @@ function MainContent(){
             
             <span className="w-full bg-zinc-300 h-0.5"></span>
             
-            <div className="w-full h-10 flex flex-row items-center justify-around px-2 py-0.5 ">
-                <div><ClockIcon className='w-5 h-5 p-0.5 text-slate-500'/></div>
-                <div className='text-slate-500'>Mon</div>
-                <div className='text-slate-500'>Tue</div>
-                <div className='text-slate-500'>Wed</div>
-                <div className='text-slate-500'>Thu</div>
-                <div className='text-slate-500'>Fri</div>
-                <div className='text-slate-500'>Sat</div>
-                <div className='text-slate-500'>Sun</div>
-            </div>
-            
-            <span className="w-full bg-zinc-300 h-0.5"></span>
-            
             <div className="w-full h-full">
                 <Scheduler/>
             </div>
